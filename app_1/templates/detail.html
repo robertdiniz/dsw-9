@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhe</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="fade">
+        
+    </div>
+    <div>
+        <h1>Detalhes do Disco!</h1>
+        <ul>
+            <li>Nome:{{ disco.nome }}</li>
+            <li>Descrição:{{ disco.descricao }}</li>
+            <li>País:{{ disco.pais }}</li>
+            <li>Quantidade:{{ disco.quantidade }}</li>
+        </ul>
+    </div>
+</body>
+</html>
